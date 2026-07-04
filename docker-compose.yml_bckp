@@ -1,0 +1,19 @@
+services:
+  hermes-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: junkielab/hermes-agent:latest
+    container_name: hermes-agent
+    restart: unless-stopped
+    network_mode: host
+    command: gateway run
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+    environment:
+      TZ: Asia/Jakarta
+      HERMES_DASHBOARD: "0"
+    volumes:
+      - /opt/junkielab/hermes-agent/data:/opt/data
+      - /var/run/docker.sock:/var/run/docker.sock
