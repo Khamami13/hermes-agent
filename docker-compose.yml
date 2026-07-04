@@ -1,7 +1,7 @@
 services:
   hermes-agent:
     # Bagian 'build' dan 'context' DIHAPUS
-    image: ghcr.io/Khamami13/hermes-agent:latest # Ubah nama image ke GitHub
+    image: ghcr.io/khamami13/hermes-agent:latest # Ubah nama image ke GitHub
     container_name: hermes-agent
     restart: unless-stopped
     network_mode: host
