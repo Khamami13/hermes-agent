@@ -13,6 +13,7 @@ services:
     environment:
       TZ: Asia/Jakarta
       HERMES_DASHBOARD: "0"
+      WHATSAPP_ENABLED: "false"
     volumes:
       - /opt/junkielab/hermes-agent/data:/opt/data
       - /var/run/docker.sock:/var/run/docker.sock
