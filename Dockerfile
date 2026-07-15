@@ -77,7 +77,7 @@ RUN python3 -m venv /opt/netops-venv && \
     advertools \
     tldextract \
     rapidfuzz \
-    dateparser
+    dateparser \
     graphifyy
 
 RUN python -m playwright install chromium
