@@ -78,8 +78,10 @@ RUN python3 -m venv /opt/netops-venv && \
     tldextract \
     rapidfuzz \
     dateparser
+    graphifyy
 
 RUN python -m playwright install chromium
+RUN graphify hermes install
 
 WORKDIR /opt/data
 
