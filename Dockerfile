@@ -61,7 +61,7 @@ RUN python3 -m venv /opt/netops-venv && \
     jinja2 \
     pyyaml \
     requests \
-    httpx \
+    "httpx<0.28.0" \
     routeros-api \
     librouteros \
     rich \
